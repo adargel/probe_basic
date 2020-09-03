@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1918</width>
-    <height>1139</height>
+    <height>1146</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -224,7 +224,7 @@ bottom-margin: 0px;
            <enum>QTabWidget::South</enum>
           </property>
           <property name="currentIndex">
-           <number>4</number>
+           <number>6</number>
           </property>
           <widget class="QWidget" name="main_tab">
            <attribute name="title">
@@ -17769,6 +17769,9 @@ QTabBar::tab:only-one {
     border-radius: 4px;
 }
 
+QTabWidget::pane{
+	border: 0px;
+}
 
 </string>
               </property>
@@ -17830,358 +17833,30 @@ QTabBar::tab:only-one {
 }</string>
                   </property>
                   <property name="currentIndex">
-                   <number>1</number>
+                   <number>0</number>
                   </property>
                   <widget class="QWidget" name="spot_drill_tab">
                    <attribute name="title">
-                    <string>SPOT DRILL</string>
+                    <string>HOLE CIRCLE</string>
                    </attribute>
-                  </widget>
-                  <widget class="QWidget" name="drill_tab">
-                   <attribute name="title">
-                    <string>DRILL</string>
-                   </attribute>
-                   <layout class="QHBoxLayout" name="horizontalLayout_12">
-                    <item>
-                     <widget class="QWidget" name="widget_3" native="true">
-                      <property name="sizePolicy">
-                       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                        <horstretch>0</horstretch>
-                        <verstretch>0</verstretch>
-                       </sizepolicy>
-                      </property>
+                   <layout class="QGridLayout" name="gridLayout_2">
+                    <item row="0" column="0">
+                     <widget class="HoleCircleWidget" name="holecirclewidget">
                       <property name="minimumSize">
                        <size>
-                        <width>640</width>
-                        <height>410</height>
+                        <width>1420</width>
+                        <height>580</height>
                        </size>
                       </property>
-                      <widget class="QLabel" name="label_41">
-                       <property name="geometry">
-                        <rect>
-                         <x>20</x>
-                         <y>8</y>
-                         <width>600</width>
-                         <height>401</height>
-                        </rect>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">QLabel{
-    border: none;
-    background: transparent;
-}</string>
-                       </property>
-                       <property name="text">
-                        <string/>
-                       </property>
-                       <property name="pixmap">
-                        <pixmap resource="probe_basic.qrc">:/images/drill_dims_white.png</pixmap>
-                       </property>
-                       <property name="scaledContents">
-                        <bool>true</bool>
-                       </property>
-                      </widget>
-                      <widget class="QLabel" name="label_45">
-                       <property name="geometry">
-                        <rect>
-                         <x>291</x>
-                         <y>266</y>
-                         <width>60</width>
-                         <height>37</height>
-                        </rect>
-                       </property>
-                       <property name="minimumSize">
-                        <size>
-                         <width>60</width>
-                         <height>37</height>
-                        </size>
-                       </property>
-                       <property name="maximumSize">
-                        <size>
-                         <width>60</width>
-                         <height>37</height>
-                        </size>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">QLabel{
-    border-style: transparant;
-    border-color: rgb(235, 235, 235);
-    border-width: 1px;
-    border-radius: 5px;
-    color: black;
-    background: rgb(235, 235, 235);
-	font: 14pt &quot;Bebas Kai&quot;;
-}</string>
-                       </property>
-                       <property name="text">
-                        <string/>
-                       </property>
-                       <property name="alignment">
-                        <set>Qt::AlignCenter</set>
-                       </property>
-                      </widget>
-                      <widget class="QLabel" name="label_61">
-                       <property name="geometry">
-                        <rect>
-                         <x>290</x>
-                         <y>220</y>
-                         <width>61</width>
-                         <height>41</height>
-                        </rect>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">QLabel{
-    color: white;
-	font: 16pt &quot;Bebas Kai&quot;;
-}</string>
-                       </property>
-                       <property name="text">
-                        <string>TIP ANGLE</string>
-                       </property>
-                       <property name="alignment">
-                        <set>Qt::AlignCenter</set>
-                       </property>
-                       <property name="wordWrap">
-                        <bool>true</bool>
-                       </property>
-                      </widget>
-                      <widget class="QLabel" name="label_60">
-                       <property name="geometry">
-                        <rect>
-                         <x>279</x>
-                         <y>28</y>
-                         <width>81</width>
-                         <height>41</height>
-                        </rect>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">QLabel{
-    color: white;
-	font: 16pt &quot;Bebas Kai&quot;;
-}</string>
-                       </property>
-                       <property name="text">
-                        <string>HOLE DIAMETER</string>
-                       </property>
-                       <property name="alignment">
-                        <set>Qt::AlignCenter</set>
-                       </property>
-                       <property name="wordWrap">
-                        <bool>true</bool>
-                       </property>
-                      </widget>
-                      <widget class="QLabel" name="label_46">
-                       <property name="geometry">
-                        <rect>
-                         <x>474</x>
-                         <y>159</y>
-                         <width>100</width>
-                         <height>37</height>
-                        </rect>
-                       </property>
-                       <property name="sizePolicy">
-                        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                         <horstretch>0</horstretch>
-                         <verstretch>0</verstretch>
-                        </sizepolicy>
-                       </property>
-                       <property name="minimumSize">
-                        <size>
-                         <width>100</width>
-                         <height>37</height>
-                        </size>
-                       </property>
-                       <property name="maximumSize">
-                        <size>
-                         <width>100</width>
-                         <height>37</height>
-                        </size>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">QLabel{
-    border-style: transparant;
-    border-color: rgb(235, 235, 235);
-    border-width: 1px;
-    border-radius: 5px;
-    color: black;
-    background: rgb(235, 235, 235);
-	font: 14pt &quot;Bebas Kai&quot;;
-}</string>
-                       </property>
-                       <property name="text">
-                        <string/>
-                       </property>
-                       <property name="alignment">
-                        <set>Qt::AlignCenter</set>
-                       </property>
-                      </widget>
-                      <widget class="QLabel" name="label_44">
-                       <property name="geometry">
-                        <rect>
-                         <x>269</x>
-                         <y>75</y>
-                         <width>100</width>
-                         <height>37</height>
-                        </rect>
-                       </property>
-                       <property name="sizePolicy">
-                        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                         <horstretch>0</horstretch>
-                         <verstretch>0</verstretch>
-                        </sizepolicy>
-                       </property>
-                       <property name="minimumSize">
-                        <size>
-                         <width>100</width>
-                         <height>37</height>
-                        </size>
-                       </property>
-                       <property name="maximumSize">
-                        <size>
-                         <width>100</width>
-                         <height>37</height>
-                        </size>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">QLabel{
-    border-style: transparant;
-    border-color: rgb(235, 235, 235);
-    border-width: 1px;
-    border-radius: 5px;
-    color: black;
-    background: rgb(235, 235, 235);
-	font: 14pt &quot;Bebas Kai&quot;;
-}</string>
-                       </property>
-                       <property name="text">
-                        <string/>
-                       </property>
-                       <property name="alignment">
-                        <set>Qt::AlignCenter</set>
-                       </property>
-                      </widget>
-                      <widget class="QLabel" name="label_59">
-                       <property name="geometry">
-                        <rect>
-                         <x>473</x>
-                         <y>129</y>
-                         <width>101</width>
-                         <height>21</height>
-                        </rect>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">QLabel{
-    color: white;
-	font: 16pt &quot;Bebas Kai&quot;;
-}</string>
-                       </property>
-                       <property name="text">
-                        <string>DIAM DEPTH</string>
-                       </property>
-                       <property name="alignment">
-                        <set>Qt::AlignCenter</set>
-                       </property>
-                      </widget>
-                      <widget class="QLabel" name="label_53">
-                       <property name="geometry">
-                        <rect>
-                         <x>66</x>
-                         <y>152</y>
-                         <width>101</width>
-                         <height>21</height>
-                        </rect>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">QLabel{
-    color: white;
-	font: 16pt &quot;Bebas Kai&quot;;
-}</string>
-                       </property>
-                       <property name="text">
-                        <string>Z DEPTH</string>
-                       </property>
-                       <property name="alignment">
-                        <set>Qt::AlignCenter</set>
-                       </property>
-                      </widget>
-                      <widget class="QLabel" name="label_42">
-                       <property name="geometry">
-                        <rect>
-                         <x>66</x>
-                         <y>183</y>
-                         <width>100</width>
-                         <height>37</height>
-                        </rect>
-                       </property>
-                       <property name="sizePolicy">
-                        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                         <horstretch>0</horstretch>
-                         <verstretch>0</verstretch>
-                        </sizepolicy>
-                       </property>
-                       <property name="minimumSize">
-                        <size>
-                         <width>100</width>
-                         <height>37</height>
-                        </size>
-                       </property>
-                       <property name="maximumSize">
-                        <size>
-                         <width>100</width>
-                         <height>37</height>
-                        </size>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">QLabel{
-    border-style: transparant;
-    border-color: rgb(235, 235, 235);
-    border-width: 1px;
-    border-radius: 5px;
-    color: black;
-    background: rgb(235, 235, 235);
-	font: 14pt &quot;Bebas Kai&quot;;
-}</string>
-                       </property>
-                       <property name="text">
-                        <string/>
-                       </property>
-                       <property name="alignment">
-                        <set>Qt::AlignCenter</set>
-                       </property>
-                      </widget>
+                      <property name="maximumSize">
+                       <size>
+                        <width>1420</width>
+                        <height>580</height>
+                       </size>
+                      </property>
                      </widget>
                     </item>
                    </layout>
-                  </widget>
-                  <widget class="QWidget" name="ream_tab">
-                   <attribute name="title">
-                    <string>REAM</string>
-                   </attribute>
-                  </widget>
-                  <widget class="QWidget" name="chamfer_tab">
-                   <attribute name="title">
-                    <string>CHAMFER</string>
-                   </attribute>
-                  </widget>
-                  <widget class="QWidget" name="rigid_tap_tab">
-                   <attribute name="title">
-                    <string>RIGID TAP</string>
-                   </attribute>
-                  </widget>
-                  <widget class="QWidget" name="threadmill_tab">
-                   <attribute name="title">
-                    <string>THREAD MILL</string>
-                   </attribute>
-                  </widget>
-                  <widget class="QWidget" name="XY_tab">
-                   <attribute name="title">
-                    <string>XY COORD</string>
-                   </attribute>
-                  </widget>
-                  <widget class="QWidget" name="gcode_tab">
-                   <attribute name="title">
-                    <string>GENERATE G CODE</string>
-                   </attribute>
                   </widget>
                  </widget>
                 </item>
@@ -31037,6 +30712,11 @@ font: 11pt bebas kai;
    <header>qtpyvcp.widgets.input_widgets.line_edit</header>
   </customwidget>
   <customwidget>
+   <class>HoleCircleWidget</class>
+   <extends>QWidget</extends>
+   <header>qtpyvcp.widgets.conversational.hole_circle</header>
+  </customwidget>
+  <customwidget>
    <class>DROLabel</class>
    <extends>QLabel</extends>
    <header>qtpyvcp.widgets.display_widgets.dro_label</header>
@@ -32288,16 +31968,16 @@ font: 11pt bebas kai;
   </property>
  </designerdata>
  <buttongroups>
-  <buttongroup name="mainorthoperspbtnGroup"/>
   <buttongroup name="xycalbtnGroup"/>
-  <buttongroup name="probehelpGroup"/>
-  <buttongroup name="proberoutinebtnGroup"/>
+  <buttongroup name="mainorthoperspbtnGroup"/>
+  <buttongroup name="probetabGroup"/>
+  <buttongroup name="probemodeGroup"/>
   <buttongroup name="plotviewGroup"/>
+  <buttongroup name="probepagewcsbtnGroup"/>
+  <buttongroup name="probehelpGroup"/>
   <buttongroup name="fileviewerbtnGroup"/>
   <buttongroup name="plotorthoperspbtnGroup"/>
   <buttongroup name="customwcsbtnGroup"/>
-  <buttongroup name="probetabGroup"/>
-  <buttongroup name="probemodeGroup"/>
-  <buttongroup name="probepagewcsbtnGroup"/>
+  <buttongroup name="proberoutinebtnGroup"/>
  </buttongroups>
 </ui>
